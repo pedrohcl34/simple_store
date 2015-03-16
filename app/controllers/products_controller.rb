@@ -5,8 +5,43 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+    Product.create(:title          =>  "Mountain Backpack 2.0",
+                      :description    =>  "The best backpack for climbing",
+                      :price          =>  300.34,
+                      :stock_quantity =>  22)
+      
+      Product.create(:title          =>  "Spacial Boots",
+                      :description    =>  "Boots designed to fly away",
+                      :price          =>  500.89,
+                      :stock_quantity =>  100)
+      
+      Product.create(:title          =>  "Winterpeg Gloves",
+                      :description    =>  "Get dressed for the Winnipeg's winter",
+                      :price          =>  78.20,
+                      :stock_quantity =>  50)
+      
+      Product.create(:title          =>  "Dell Insiron 15",
+                      :description    =>  "The best computer ever",
+                      :price          =>  1300.99,
+                      :stock_quantity =>  1)
+      
+      Product.create(:title          =>  "Bionic glasses",
+                      :description    =>  "The best backpack for climbing",
+                      :price          =>  300.34,
+                      :stock_quantity =>  22)
+      Product.create(:title          =>  "Tuna Fish",
+                      :description    =>  "Marvelous fish",
+                      :price          =>  24,
+                      :stock_quantity =>  38)
+     
   end
-
+  # GET /products/index2
+  
+  def index2
+    
+  end
+      
+    
   # GET /products/1
   # GET /products/1.json
   def show
